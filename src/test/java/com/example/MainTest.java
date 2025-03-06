@@ -9,8 +9,8 @@ import org.junit.Test;
 public class MainTest {
     private Main main;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    
-    @Before // This runs before each test
+
+    @Before
     public void setUp() {
         main = new Main();
         System.setOut(new PrintStream(outContent)); // Redirect output for testing
@@ -19,6 +19,6 @@ public class MainTest {
     @Test
     public void testPrintEvenNumbers() {
         main.printEvenNumbers();
-       assertEquals("numbers: 2 4 6 8 10", outContent.toString().trim());
+        assertEquals("numbers: 2 4 6 8 10", outContent.toString().trim());
     }
 }
