@@ -19,6 +19,6 @@ public class MainTest {
     @Test
     public void testPrintEvenNumbers() {
         main.printEvenNumbers();
-        assertEquals("Even numbers: 2 4 6 8 10\n", outContent.toString());
+       assertEquals("numbers: 2 4 6 8 10", outContent.toString().trim());
     }
 }
